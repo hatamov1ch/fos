@@ -19,6 +19,10 @@ const GlobalStyles = createGlobalStyle`
 
 		// Font Families
 		--ff-primary: "Montserrat";
+
+		// Transitions
+		--transition-primary: 300ms;
+		--transition-secondary: 500ms;
 	}	
 
 	html {
