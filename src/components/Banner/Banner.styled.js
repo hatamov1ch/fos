@@ -1,5 +1,19 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+// Images
 import backgroundImage from "../../assets/images/site/luxury-and-modern.jpg";
+
+// Animations
+const scrollBottomAnimation = keyframes`
+	from {
+		opacity: .5;
+		transform: translate(-50%, -.5rem) scale(.95);
+	}
+	to {
+		opacity: .75;
+		transform: translate(-50%, .5rem) scale(1);
+	}
+`;
 
 const StyledBanner = styled.div`
 	background: url(${backgroundImage}) center / cover;
@@ -29,6 +43,12 @@ export const Content = styled.div`
 	z-index: 1;
 	display: flex;
 	justify-content: space-between;
+`;
+
+export const Row = styled.div`
+	&:nth-of-type(1) {
+		display: flex;
+	}
 `;
 
 export const Main = styled.div`
@@ -92,6 +112,24 @@ export const Icon = styled.i`
 	margin-right: 0.75em;
 	vertical-align: middle;
 	transition: var(--transition-primary) ease-in-out;
+`;
+
+export const ScrollBottom = styled.span`
+	fill: var(--color-light-primary);
+	color: var(--color-light-primary);
+	width: 3.5rem;
+	position: absolute;
+	z-index: 1;
+	left: 50%;
+	bottom: 3.5rem;
+	transform: translateX(-55%);
+	opacity: 0.5;
+	animation: ${scrollBottomAnimation} 1s ease-in-out infinite alternate;
+	cursor: pointer;
+
+	&:hover {
+		animation-play-state: paused;
+	}
 `;
 
 export default StyledBanner;

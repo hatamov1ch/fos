@@ -1,14 +1,12 @@
 import StyledHeader, { Content, Navigation, Link } from "./Header.styled";
-
-// importing a custom hook to handle true / false conditions
-import { useBoolean } from "../../hooks/useBoolean";
+import { useState } from "react";
 
 // importing necessary components
 import Section from "../Section";
 import { Pivot as Hamburger } from "hamburger-react";
 
 const Header = () => {
-	const [isMobile, setIsMobile] = useBoolean();
+	const [isMobile, setIsMobile] = useState();
 
 	const toggleMobile = () => setIsMobile((state) => !state);
 	const disableMobile = () => setIsMobile((state) => (state = false));

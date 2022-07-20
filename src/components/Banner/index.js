@@ -1,13 +1,22 @@
-import StyledBanner, { Content, Main, List, Icon } from "./Banner.styled";
+import StyledBanner, {
+	Content,
+	Row,
+	Main,
+	List,
+	Icon,
+	ScrollBottom,
+} from "./Banner.styled";
 
 // importing necessary components
 import Section from "../Section";
 import SignUp from "../SignUp";
+import BusinessCard from "../BusinessCard";
 
 // importing svg icons
 import { MeasureSVG } from "../../assets/svg/measure-svg";
 import { HouseKeySVG } from "../../assets/svg/house-key-svg";
 import { WarrantySVG } from "../../assets/svg/warranty-svg";
+import { MouseSVG } from "../../assets/svg/mouse-svg";
 
 const Banner = () => (
 	<StyledBanner>
@@ -31,31 +40,39 @@ const Banner = () => (
 
 					<button>Проделанные работы</button>
 
-					<List>
-						<li>
-							<Icon>
-								<MeasureSVG />
-							</Icon>
-							Бесплатные замер
-						</li>
-						<li>
-							<Icon>
-								<HouseKeySVG />
-							</Icon>
-							Ремонт под ключ
-						</li>
-						<li>
-							<Icon>
-								<WarrantySVG />
-							</Icon>
-							Гарантия качества
-						</li>
-					</List>
+					<Row>
+						<List>
+							<li>
+								<Icon>
+									<MeasureSVG />
+								</Icon>
+								Бесплатные замер
+							</li>
+							<li>
+								<Icon>
+									<HouseKeySVG />
+								</Icon>
+								Ремонт под ключ
+							</li>
+							<li>
+								<Icon>
+									<WarrantySVG />
+								</Icon>
+								Гарантия качества
+							</li>
+						</List>
+
+						<BusinessCard />
+					</Row>
 				</Main>
 
 				<SignUp />
 			</Content>
 		</Section>
+
+		<ScrollBottom>
+			<MouseSVG />
+		</ScrollBottom>
 	</StyledBanner>
 );
 
