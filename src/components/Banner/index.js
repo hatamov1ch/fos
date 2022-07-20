@@ -1,7 +1,8 @@
-import StyledBanner, { Content, Main, List, Icon, Form } from "./Banner.styled";
+import StyledBanner, { Content, Main, List, Icon } from "./Banner.styled";
 
 // importing necessary components
 import Section from "../Section";
+import SignUp from "../SignUp";
 
 // importing svg icons
 import { MeasureSVG } from "../../assets/svg/measure-svg";
@@ -52,29 +53,7 @@ const Banner = () => (
 					</List>
 				</Main>
 
-				<Form>
-					<div>
-						<label>Ваше полное имя</label>
-						<input placeholder="Андрей Николаевич" />
-					</div>
-
-					<div>
-						<label>Ваш номер телефона</label>
-						<input placeholder="+99(899)900-43-34" />
-					</div>
-
-					<div>
-						<label>Ваше сообщение</label>
-						<textarea placeholder="Опишите подробности..." />
-					</div>
-
-					<input type="submit" value={"Отправить"} />
-
-					<p>
-						Нажатием данной кнопки вы соглашаетесь на обработку ваших
-						персональных данных.
-					</p>
-				</Form>
+				<SignUp />
 			</Content>
 		</Section>
 	</StyledBanner>

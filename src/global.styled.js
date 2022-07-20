@@ -68,27 +68,27 @@ const GlobalStyles = createGlobalStyle`
 	 	color: inherit;
 	 }
 
+	 fieldset,
+	 input,
+	 textarea,
+	 button {
+		border: 0;
+		outline: 0;
+		color: inherit;
+	 	font-size: inherit;
+	 }
 
 	 input,textarea {
-	 	font-size: inherit;
 	 	font-family: inherit;
 	 	font-weight: inherit;
 	 	font-style: inherit;
-	 	border: 0;
-		outline: 0;
 		width: 100%;
 		background: none;
-		color: inherit;
 
 		&::placeholder {
 			font-size: 1.5rem;
 			letter-spacing: 1px;
 		}
-	 }
-
-	 button {
-	 	border: 0;
-		font-size: inherit;
 	 }
 
 	 img {
