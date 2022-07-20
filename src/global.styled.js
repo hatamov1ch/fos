@@ -5,6 +5,7 @@ const GlobalStyles = createGlobalStyle`
 		// Colors
 		--color-dark-primary: #1c1c1c;
 		--color-dark-secondary: #333333;
+		--color-dark-tertiary: #555;
 		--color-global: #4d5156;
 		--color-light-primary: #ffffff;
 		--color-light-secondary: #fafafa;
@@ -14,15 +15,15 @@ const GlobalStyles = createGlobalStyle`
 		// Gradients
 		--gradient-accent: linear-gradient(315deg, rgb(251, 176, 52), rgb(255, 221, 0) 74%);
 
-		// Background Images
-		--background-banner: "";
-
 		// Font Families
 		--ff-primary: "Montserrat";
 
 		// Transitions
 		--transition-primary: 300ms;
 		--transition-secondary: 500ms;
+
+		// Borders
+		--radius-primary: .5rem;
 	}	
 
 	html {
@@ -67,20 +68,40 @@ const GlobalStyles = createGlobalStyle`
 	 	color: inherit;
 	 }
 
-	 input {
+
+	 input,textarea {
 	 	font-size: inherit;
 	 	font-family: inherit;
 	 	font-weight: inherit;
 	 	font-style: inherit;
+	 	border: 0;
+		outline: 0;
+		width: 100%;
+		background: none;
+		color: inherit;
+
+		&::placeholder {
+			font-size: 1.5rem;
+			letter-spacing: 1px;
+		}
 	 }
 
 	 button {
 	 	border: 0;
+		font-size: inherit;
 	 }
 
 	 img {
 	 	width: 100%;
 	 	display: block;
+	 }
+
+	 svg {
+	 	width: inherit;
+	 	height: inherit;
+	 	vertical-align: inherit;
+	 	fill: inherit;
+	 	color: inherit;
 	 }
 `;
 

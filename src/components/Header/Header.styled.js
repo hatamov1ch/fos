@@ -1,15 +1,19 @@
 import styled from "styled-components";
 
 const StyledHeader = styled.header`
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 999999;
+
 	.hamburger-react {
 		display: none;
-		color: var(--color-light-primary);
-		position: relative;
-		z-index: 9999;
 	}
 
 	@media (max-width: 768px) {
 		background: var(--color-dark-primary);
+		position: fixed;
 
 		.hamburger-react {
 			display: block;
@@ -23,7 +27,7 @@ const StyledHeader = styled.header`
 `;
 
 export const Content = styled.div`
-	padding-top: 2.5rem;
+	padding-top: 5rem;
 
 	@media (max-width: 768px) {
 		padding: 1rem 0;
