@@ -10,7 +10,7 @@ const GlobalStyles = createGlobalStyle`
 		--color-light-primary: #ffffff;
 		--color-light-secondary: #fafafa;
 		--color-light-tertiary: #eeeeee;
-		--color-accent: yellow;
+		--color-beige: #e8c99b;
 
 		// Gradients
 		--gradient-accent: linear-gradient(315deg, rgb(251, 176, 52), rgb(255, 221, 0) 74%);
@@ -65,7 +65,8 @@ const GlobalStyles = createGlobalStyle`
 	 }
 
 	 a {
-	 	color: inherit;
+		 color: inherit;
+		 font-size: inherit;
 	 }
 
 	 fieldset,
@@ -106,9 +107,21 @@ const GlobalStyles = createGlobalStyle`
 `;
 
 export const Container = styled.div`
-	width: 100%;
-	max-width: 150rem;
-	margin: 0 auto;
+  width: 100%;
+  max-width: 150rem;
+  margin: 0 auto;
+`;
+
+export const LinkButton = styled.a`
+  text-decoration: none;
+  cursor: pointer;
+  transition: var(--transition-primary);
+  background: transparent;
+  color: inherit;
+  display: inline-block;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border-radius: var(--radius-primary);
 `;
 
 export default GlobalStyles;
