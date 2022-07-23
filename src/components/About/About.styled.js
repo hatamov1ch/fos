@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 const StyledAbout = styled.div`
-  background: var(--color-dark-primary);
   color: var(--color-light-secondary);
 `;
 

@@ -48,6 +48,7 @@ const GlobalStyles = createGlobalStyle`
 	 	font-weight: 400;
 	 	font-style: normal;
 	 	font-size: 1.6rem;
+		background: var(--color-dark-primary);
 	 }
 
 	 h1,

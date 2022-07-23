@@ -2,17 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b1f0813d-8b8f-4f2f-9f13-f8e8c2fc7dd1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/fos.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/prettier.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/site/handyman.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/site/luxury-hall.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/svg/call-me-svg.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/svg/mail-svg.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/svg/mouse-svg.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/About/About.styled.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About/About.styled.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/global.styled.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/global.styled.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,11 +45,23 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1658581461010</updated>
-      <workItem from="1658581463590" duration="463000" />
+      <workItem from="1658581463590" duration="7279000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/Services/index.js</url>
+          <line>17</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
