@@ -1,9 +1,7 @@
 import StyledServices, {
   Content,
-  Title,
-  Description,
-  List,
-  Prices,
+  ListOfServices,
+  Service,
 } from "./Services.styled";
 
 //importing necessary components
@@ -19,126 +17,77 @@ const Services = () => {
     <StyledServices>
       <Section>
         <Content>
-          <Title>Типы ремонта и их стоимость</Title>
-          <Description>
-            Стоимость работ указана за ВСЕ работы – как черновые, так и
-            чистовые. Минимальная стоимость ремонта: 990000 руб. Оценка услуги
-            является ориентировочной, финальная смета зависит от сложности работ
-            и планировки помещения.
-          </Description>
+          <header>
+            <h2>Виды услуг и их стоимость</h2>
+            <p>
+              Качественный, профессиональный ремонт квартир любой сложности.
+              Создаем дизайнерские проекты на ремонт, весь спектр ремонтных
+              работ в новостройках под ключ. Качественный, профессиональный
+              ремонт квартир любой сложности.
+            </p>
+          </header>
 
-          <List>
-            <li className="service">
-              <img src={SimpleRoom} alt="" />
-              <h3>Косметический ремонт</h3>
+          <ListOfServices>
+            <Service>
+              <img src={SimpleRoom} alt="Картинка обычного ремонта" />
 
-              <p>
-                Работы с монтажом (заменой) инженерных сетей (электрики и
-                сантехники), с выравниванием всех стен, полов и потолков.
-              </p>
+              <div className="service-body">
+                <h3>Стандартный ремонт</h3>
+                <p>
+                  Качественный, профессиональный ремонт квартир любой сложности.
+                  Создаем дизайнерские проекты на ремонт, весь спектр ремонтных
+                  работ в новостройках.
+                </p>
 
-              <Prices>
-                <h4>Стоимость</h4>
+                <div className="price-container">
+                  от <span className="price">$250.00</span>
+                </div>
 
-                <ul>
-                  <li>
-                    <p>Ремонтные работы (все)</p>
-                    <p>
-                      от <span className="strong">$200.00</span>
-                    </p>
-                  </li>
+                <span>Заказать работу</span>
+                <span className="service-body__number">01</span>
+              </div>
+            </Service>
 
-                  <li>
-                    <p>Черновые материалы</p>
-                    <p>
-                      от <span className="strong">$175.00</span>
-                    </p>
-                  </li>
+            <Service>
+              <img src={EuroStyleRoom} alt="Картинка обычного ремонта" />
 
-                  <li>
-                    <p>Чистовые материалы</p>
-                    <p>
-                      <span className="strong">Договорная</span>
-                    </p>
-                  </li>
-                </ul>
-              </Prices>
-            </li>
+              <div className="service-body">
+                <h3>Евро ремонт</h3>
+                <p>
+                  Качественный, профессиональный ремонт квартир любой сложности.
+                  Создаем дизайнерские проекты на ремонт, весь спектр ремонтных
+                  работ в новостройках.
+                </p>
 
-            <li className="service">
-              <img src={EuroStyleRoom} alt="" />
-              <h3>Европейский ремонт</h3>
+                <div className="price-container">
+                  от <span className="price">$250.00</span>
+                </div>
 
-              <p>
-                Работы с монтажом (заменой) инженерных сетей (электрики и
-                сантехники), с выравниванием всех стен, полов и потолков.
-              </p>
+                <span>Заказать работу</span>
+                <span className="service-body__number">02</span>
+              </div>
+            </Service>
 
-              <Prices>
-                <h4>Стоимость</h4>
+            <Service>
+              <img src={HiTechRoom} alt="Картинка обычного ремонта" />
 
-                <ul>
-                  <li>
-                    <p>Ремонтные работы (все)</p>
-                    <p>
-                      от <span className="strong">$200.00</span>
-                    </p>
-                  </li>
+              <div className="service-body">
+                <h3>Ремонт в стиле Hi Tech</h3>
+                <p>
+                  Качественный, профессиональный ремонт квартир любой сложности.
+                  Создаем дизайнерские проекты на ремонт, весь спектр ремонтных
+                  работ в новостройках.
+                </p>
 
-                  <li>
-                    <p>Черновые материалы</p>
-                    <p>
-                      от <span className="strong">$175.00</span>
-                    </p>
-                  </li>
+                <div className="price-container">
+                  от <span className="price">$250.00</span>
+                </div>
 
-                  <li>
-                    <p>Чистовые материалы</p>
-                    <p>
-                      <span className="strong">Договорная</span>
-                    </p>
-                  </li>
-                </ul>
-              </Prices>
-            </li>
-
-            <li className="service">
-              <img src={HiTechRoom} alt="" />
-              <h3>Ремонт в стиле Hi-Tech</h3>
-
-              <p>
-                Работы с монтажом (заменой) инженерных сетей (электрики и
-                сантехники), с выравниванием всех стен, полов и потолков.
-              </p>
-
-              <Prices>
-                <h4>Стоимость</h4>
-
-                <ul>
-                  <li>
-                    <p>Ремонтные работы (все)</p>
-                    <p>
-                      от <span className="strong">$200.00</span>
-                    </p>
-                  </li>
-
-                  <li>
-                    <p>Черновые материалы</p>
-                    <p>
-                      от <span className="strong">$175.00</span>
-                    </p>
-                  </li>
-
-                  <li>
-                    <p>Чистовые материалы</p>
-                    <p>
-                      <span className="strong">Договорная</span>
-                    </p>
-                  </li>
-                </ul>
-              </Prices>
-            </li>
-          </List>
+                <span>Заказать работу</span>
+                <span className="service-body__number">03</span>
+              </div>
+            </Service>
+          </ListOfServices>
         </Content>
       </Section>
     </StyledServices>

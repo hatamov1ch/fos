@@ -1,81 +1,116 @@
 import styled from "styled-components";
 
-export const StyledServices = styled.div`
+const StyledServices = styled.div`
   color: var(--color-light-secondary);
 `;
-
 export const Content = styled.div`
-  padding: 5rem 0;
-`;
+  padding: 2rem 0;
 
-export const Title = styled.h2`
-  font-size: 7.2rem;
-  margin-bottom: 0.5em;
-`;
+  header {
+    transform: translateY(-17.5%);
+    margin-bottom: 17.5rem;
 
-export const Description = styled.p`
-  max-width: 75ch;
-`;
-
-export const List = styled.ul`
-  margin-top: 7em;
-  display: flex;
-  justify-content: space-between;
-  list-style: none;
-
-  .service {
-    width: 30%;
-    padding: 1em;
-    box-shadow: 0 5px 30px rgba(35, 35, 35, 0.75);
-    border: 1px solid #333;
-    border-radius: var(--radius-primary);
-    text-align: center;
-
-    img {
-      height: 30rem;
-      object-fit: cover;
-    }
-
-    h3 {
-      margin: 1.25em 0 0.75em;
-      font-size: 2.25rem;
+    h2 {
+      font-size: 7.5rem;
+      margin-bottom: 0.45em;
     }
 
     p {
-      font-size: 1.5rem;
+      max-width: 75ch;
     }
   }
 `;
+export const ListOfServices = styled.ul`
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+`;
+export const Service = styled.li`
+  width: 28.5%;
+  position: relative;
+  transform: translateX(10%);
 
-export const Prices = styled.div`
-  margin-top: 2em;
-
-  h4 {
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-bottom: 1em;
-    text-align: center;
-
-    &:hover ul {
-      background: red;
-    }
+  img {
+    width: 85%;
+    top: 0;
+    left: 50%;
+    transform: translate(-70%, -35%);
+    z-index: -1;
+    position: absolute;
+    box-shadow: 0 5px 30px rgba(35, 35, 35, 0.5);
   }
 
-  li {
-    border-radius: 0.5rem;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 1.5rem;
-    border: 1px solid #555;
-    padding: 0.75em 1em;
-    background: rgba(35, 35, 35, 0.5);
+  .service-body {
+    background: rgba(50, 50, 50, 0.95);
+    padding: 2.5em 1.5em;
+    border-radius: var(--radius-primary);
+    box-shadow: 0 5px 30px -5px rgba(0, 0, 0, 0.5);
+    color: var(--color-light-primary);
+    cursor: pointer;
+    transition: 400ms ease-in-out;
+    backface-visibility: hidden;
+    position: relative;
 
-    .strong {
+    &__number {
+      bottom: 0;
+      right: 3rem;
+      font-size: 17.5rem;
+      position: absolute;
+      opacity: 0.03;
+    }
+
+    &:hover::after {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      transition: 500ms ease-in-out;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.15);
+      z-index: -1;
+      transform: scale(0);
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    &:hover {
+      background: rgba(200, 200, 200, 0.9);
+      color: var(--color-dark-secondary);
+      transform: scale(1.05) translateY(-3rem);
+    }
+
+    h3 {
+      margin-bottom: 0.75em;
+      font-size: 2.25rem;
+      letter-spacing: 1px;
+    }
+
+    h3,
+    .price {
       font-weight: 700;
-      font-size: 1.75rem;
-      margin-left: 0.5rem;
+    }
+
+    p {
+      font-size: 1.4rem;
+      margin-bottom: 2.5em;
+      max-width: 40ch;
+    }
+
+    .price-container {
+      text-align: center;
+      font-size: 3.2rem;
+      margin-bottom: 1.25em;
+
+      .price {
+        font-size: 5.2rem;
+        margin-left: 1.5rem;
+      }
     }
   }
 `;
