@@ -18,7 +18,7 @@ const StyledWatch = styled.div`
 export const Content = styled.div`
   display: flex;
   align-items: center;
-  padding: 10rem 0;
+  padding: 5rem 0 10rem;
   justify-content: space-between;
 `;
 

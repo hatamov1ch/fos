@@ -3,11 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="b1f0813d-8b8f-4f2f-9f13-f8e8c2fc7dd1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/About/About.styled.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About/About.styled.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer/Footer.styled.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/Footer.styled.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Watch/Watch.styled.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Watch/Watch.styled.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Watch/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Watch/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +80,7 @@
       <workItem from="1658824268945" duration="1585000" />
       <workItem from="1658831172480" duration="3198000" />
       <workItem from="1658844036143" duration="411000" />
-      <workItem from="1658864308867" duration="1704000" />
+      <workItem from="1658864308867" duration="4347000" />
     </task>
     <servers />
   </component>
