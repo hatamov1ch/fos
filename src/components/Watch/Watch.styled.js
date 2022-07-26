@@ -2,6 +2,17 @@ import styled, { keyframes } from "styled-components";
 
 const StyledWatch = styled.div`
   color: var(--color-light-secondary);
+
+  video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 `;
 
 export const Content = styled.div`
@@ -53,7 +64,7 @@ export const Main = styled.div`
 const AnimatePlayIcon = keyframes`
   from {
 	  opacity: .75;
-    transform: scale(.9) translate(-50%, -60%);
+    transform: scale(.9) translate(-50%, -70%);
   }
 
   to {
