@@ -59,7 +59,7 @@ export const ImageWrapper = styled.div`
 `;
 
 export const Main = styled.div`
-  width: 40%;
+  width: 32.5%;
 
   h2 {
     font-size: 5.2rem;
