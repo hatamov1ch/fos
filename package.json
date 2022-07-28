@@ -16,6 +16,7 @@
     "react-scripts": "5.0.1",
     "styled-components": "^5.3.5",
     "web-vitals": "^2.1.4",
+    "yet-another-react-lightbox": "^1.10.0",
     "yup": "^0.32.11"
   },
   "scripts": {

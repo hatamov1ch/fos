@@ -1,44 +1,32 @@
 import StyledGallery, { Content, Images, ImageWrapper } from "./Gallery.styled";
-
+import { useState } from "react";
 //importing necessary components
 import Section from "../Section";
 
-const images = [
-  {
-    id: 1,
-    src: "https://images.unsplash.com/photo-1601628828688-632f38a5a7d0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1009&q=80",
-  },
-  {
-    id: 2,
-    src: "https://images.unsplash.com/photo-1600210492493-0946911123ea?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80",
-  },
-  {
-    id: 3,
-    src: "https://images.unsplash.com/photo-1615529182904-14819c35db37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80",
-  },
-  {
-    id: 4,
-    src: "https://images.unsplash.com/photo-1631679706909-1844bbd07221?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1392&q=80",
-  },
-  {
-    id: 5,
-    src: "https://images.unsplash.com/photo-1600210491369-e753d80a41f3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80",
-  },
-  {
-    id: 6,
-    src: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
-  },
-];
+//Lightbox
+import Lightbox from "yet-another-react-lightbox";
+import "yet-another-react-lightbox/styles.css";
 
-const Gallery = () => {
+// import optional lightbox plugins
+import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
+import Slideshow from "yet-another-react-lightbox/plugins/slideshow";
+import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
+import "yet-another-react-lightbox/plugins/thumbnails.css";
+
+const Gallery = ({ images }) => {
+  const [currentImageIndex, setCurrentImageIndex] = useState(-1);
+
   const renderImages = (images) => {
     if (!images || images.length <= 0) {
       console.error("No data to render.");
       return null;
     }
 
-    return images.map(({ id, src }) => (
-      <ImageWrapper key={`image-${id}`}>
+    return images.map(({ id, src }, index) => (
+      <ImageWrapper
+        onClick={() => setCurrentImageIndex(index)}
+        key={`image-${id}`}
+      >
         <img src={src} alt={`image-${id}`} />
       </ImageWrapper>
     ));
@@ -60,6 +48,14 @@ const Gallery = () => {
           <Images>{renderImages(images)}</Images>
         </Content>
       </Section>
+
+      <Lightbox
+        open={currentImageIndex >= 0}
+        close={() => setCurrentImageIndex(-1)}
+        slides={images}
+        index={currentImageIndex}
+        plugins={[Fullscreen, Slideshow, Thumbnails]}
+      />
     </StyledGallery>
   );
 };
