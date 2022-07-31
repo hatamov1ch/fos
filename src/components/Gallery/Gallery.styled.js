@@ -8,7 +8,6 @@ export const StyledGallery = styled.div`
     fill: var(--color-light-primary);
     cursor: pointer;
     font-size: 5rem;
-    float: right;
   }
 `;
 
@@ -22,7 +21,7 @@ export const Content = styled.div`
   }
 
   p {
-    max-width: 65ch;
+    max-width: 75ch;
     color: var(--color-light-secondary);
   }
 

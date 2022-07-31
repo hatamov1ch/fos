@@ -18,8 +18,9 @@ const StyledWatch = styled.div`
 export const Content = styled.div`
   display: flex;
   align-items: center;
-  padding: 5rem 0 10rem;
+  padding: 5rem 0;
   justify-content: space-between;
+  flex-wrap: wrap;
 `;
 
 export const VideoContainer = styled.div`
@@ -43,6 +44,15 @@ export const VideoContainer = styled.div`
     height: 100%;
     object-fit: cover;
   }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.large}) {
+    width: 35%;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.medium}) {
+    width: 100%;
+    margin-top: 5rem;
+  }
 `;
 
 export const Main = styled.div`
@@ -50,14 +60,25 @@ export const Main = styled.div`
   order: -1;
 
   h2 {
-    font-size: 6.5rem;
+    font-size: clamp(4.2rem, 5vw, 5.2rem);
     margin-bottom: 0.25em;
   }
 
   p {
-    line-height: 1.4;
-    font-size: 1.9rem;
-    letter-spacing: 1px;
+    font-size: 1.6rem;
+    max-width: 60ch;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.extraLarge}) {
+    font-size: clamp(3.5rem, 4vw, 4.2rem);
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.large}) {
+    width: 65%;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.medium}) {
+    width: 100%;
   }
 `;
 
