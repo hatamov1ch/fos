@@ -3,25 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="2f380a65-bb0b-4909-a99c-ee775241e56e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/works/work0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/works/work0.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/works/work1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/works/work1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/works/work10.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/works/work10.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/works/work11.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/works/work11.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/works/work12.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/works/work12.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/works/work13.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/works/work13.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/works/work14.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/works/work14.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/works/work15.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/works/work15.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/works/work16.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/works/work16.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/works/work17.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/works/work17.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/works/work2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/works/work2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/works/work3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/works/work3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/works/work4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/works/work4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/works/work5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/works/work5.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/works/work6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/works/work6.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/works/work7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/works/work7.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/works/work8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/works/work8.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/works/work9.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/works/work9.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/About/About.styled.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About/About.styled.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Gallery/Gallery.styled.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Gallery/Gallery.styled.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Services/Services.styled.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Services/Services.styled.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +86,7 @@
       <workItem from="1658967933601" duration="4000" />
       <workItem from="1658967945805" duration="123000" />
       <workItem from="1658968112840" duration="1226000" />
-      <workItem from="1659305491407" duration="1321000" />
+      <workItem from="1659305491407" duration="3814000" />
     </task>
     <servers />
   </component>

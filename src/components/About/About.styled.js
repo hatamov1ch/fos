@@ -5,7 +5,7 @@ const StyledAbout = styled.div`
 `;
 
 export const Content = styled.div`
-  padding: 7.5vh 0;
+  padding: 15vh 0 10vh;
 `;
 
 export const Row = styled.div`

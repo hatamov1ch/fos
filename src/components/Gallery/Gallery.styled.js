@@ -13,7 +13,7 @@ export const StyledGallery = styled.div`
 `;
 
 export const Content = styled.div`
-  padding: 10rem 0;
+  padding: 5vh 0;
 
   h2 {
     font-size: 7.5rem;

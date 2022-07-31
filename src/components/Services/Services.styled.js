@@ -4,11 +4,11 @@ const StyledServices = styled.div`
   color: var(--color-light-secondary);
 `;
 export const Content = styled.div`
-  padding: 2rem 0;
+  padding: 10vh 0;
 
   header {
     transform: translateY(-17.5%);
-    margin-bottom: 17.5rem;
+    margin-bottom: 15vh;
 
     h2 {
       font-size: 7.5rem;
@@ -19,16 +19,36 @@ export const Content = styled.div`
       max-width: 75ch;
     }
   }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.extraLarge}) {
+    padding: 5vh 0;
+
+    header {
+      margin-bottom: 0;
+
+      h2 {
+        font-size: clamp(4.5rem, 7vw, 7.5rem);
+        margin-bottom: 0.25em;
+      }
+
+      p {
+        max-width: 55ch;
+      }
+    }
+  }
 `;
+
 export const ListOfServices = styled.ul`
   list-style: none;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 `;
+
 export const Service = styled.li`
   width: 28.5%;
   position: relative;
-  transform: translateX(10%);
+  transform: translateX(5%);
 
   img {
     width: 85%;
@@ -108,9 +128,38 @@ export const Service = styled.li`
       margin-bottom: 1.25em;
 
       .price {
-        font-size: 5.2rem;
+        font-size: clamp(2.5rem, 3.5vw, 5.2rem);
         margin-left: 1.5rem;
       }
+    }
+  }
+
+  @media (min-width: 1500px) {
+    transform: translateX(10%);
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.extraLarge}) {
+    width: 30%;
+
+    .service-body {
+      background: rgba(225, 225, 225, 0.9);
+      color: var(--color-dark-primary);
+      padding: 1.5em 1em;
+    }
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.large}) {
+    width: 90%;
+    margin: 5rem 0;
+
+    img {
+      width: 100%;
+      position: static;
+      transform: none;
+    }
+
+    .service-body {
+      width: 100%;
     }
   }
 `;
