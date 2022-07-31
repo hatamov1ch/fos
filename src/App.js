@@ -1,3 +1,6 @@
+// Provider
+import { ThemeProvider } from "styled-components";
+
 // importing necessary components
 import Layout from "./components/Layout";
 import Banner from "./components/Banner";
@@ -9,14 +12,26 @@ import Gallery from "./components/Gallery";
 // importing data
 import { images } from "./images";
 
+const theme = {
+  breakpoints: {
+    extraLarge: "1200px",
+    large: "1000px",
+    medium: "860px",
+    small: "768px",
+    extraSmall: "520px",
+  },
+};
+
 const App = () => (
-  <Layout>
-    <Banner />
-    <About />
-    <Services />
-    <Gallery images={images} />
-    <Watch />
-  </Layout>
+  <ThemeProvider theme={theme}>
+    <Layout>
+      <Banner />
+      <About />
+      <Services />
+      <Gallery images={images} />
+      <Watch />
+    </Layout>
+  </ThemeProvider>
 );
 
 export default App;

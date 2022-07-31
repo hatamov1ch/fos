@@ -1,10 +1,10 @@
 import StyledBanner, {
-	Content,
-	Row,
-	Main,
-	List,
-	Icon,
-	ScrollBottom,
+  Content,
+  Row,
+  Main,
+  List,
+  Icon,
+  ScrollBottom,
 } from "./Banner.styled";
 
 // importing necessary components
@@ -19,61 +19,58 @@ import { WarrantySVG } from "../../assets/svg/warranty-svg";
 import { MouseSVG } from "../../assets/svg/mouse-svg";
 
 const Banner = () => (
-	<StyledBanner>
-		<Section>
-			<Content>
-				<Main>
-					<h1>
-						Ремонт квартир
-						<span>future of stroy</span>
-					</h1>
+  <StyledBanner>
+    <Section>
+      <Content>
+        <Main>
+          <h1>
+            Ремонт квартир
+            <span>future of stroy</span>
+          </h1>
 
-					<p>
-						Качественный, профессиональный ремонт квартир любой сложности.
-						Создаем дизайнерские проекты на ремонт, весь спектр ремонтных
-						работ в новостройках под ключ. Капитальный ремонт вторички.
-						Отделочные материалы по оптовым ценам. Представляем отчет на
-						каждом этапе работы. Не срываем сроки, гарантия качества.
-						Работает профессиональная бригада мастеров. Оплата по факту
-						работы.
-					</p>
+          <p>
+            Качественный, профессиональный ремонт квартир любой сложности.
+            Создаем дизайнерские проекты на ремонт, весь спектр ремонтных работ
+            в новостройках под ключ. Капитальный ремонт вторички. Отделочные
+            материалы по оптовым ценам.
+          </p>
 
-					<button>Проделанные работы</button>
+          <button role="button">Проделанные работы</button>
 
-					<Row>
-						<List>
-							<li>
-								<Icon>
-									<MeasureSVG />
-								</Icon>
-								Бесплатные замер
-							</li>
-							<li>
-								<Icon>
-									<HouseKeySVG />
-								</Icon>
-								Ремонт под ключ
-							</li>
-							<li>
-								<Icon>
-									<WarrantySVG />
-								</Icon>
-								Гарантия качества
-							</li>
-						</List>
+          <Row>
+            <List>
+              <li>
+                <Icon>
+                  <MeasureSVG />
+                </Icon>
+                Бесплатные замер
+              </li>
+              <li>
+                <Icon>
+                  <HouseKeySVG />
+                </Icon>
+                Ремонт под ключ
+              </li>
+              <li>
+                <Icon>
+                  <WarrantySVG />
+                </Icon>
+                Гарантия качества
+              </li>
+            </List>
 
-						<BusinessCard />
-					</Row>
-				</Main>
+            <BusinessCard />
+          </Row>
+        </Main>
 
-				<SignUp />
-			</Content>
-		</Section>
+        <SignUp />
+      </Content>
+    </Section>
 
-		<ScrollBottom>
-			<MouseSVG />
-		</ScrollBottom>
-	</StyledBanner>
+    <ScrollBottom>
+      <MouseSVG />
+    </ScrollBottom>
+  </StyledBanner>
 );
 
 export default Banner;
