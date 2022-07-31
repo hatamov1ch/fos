@@ -5,14 +5,15 @@ const StyledAbout = styled.div`
 `;
 
 export const Content = styled.div`
-  padding: 10rem 0;
+  padding: 7.5vh 0;
 `;
 
 export const Row = styled.div`
-  &:nth-child(1) {
+  &:nth-of-type(1) {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
   }
 `;
 
@@ -28,6 +29,8 @@ export const List = styled.div`
     }
 
     h3 {
+      font-size: clamp(1.75rem, 1vw, 2.2rem);
+      line-height: 1.4;
       margin-bottom: 0.75em;
       padding-bottom: 2rem;
       position: relative;
@@ -46,7 +49,37 @@ export const List = styled.div`
     }
 
     p {
-      font-size: 1.4rem;
+      font-size: 1.6rem;
+    }
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.extraLarge}) {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5vh;
+
+    li {
+      width: 30%;
+    }
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.large}) {
+    li {
+      width: 31%;
+    }
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.small}) {
+    flex-wrap: wrap;
+
+    li {
+      width: 100%;
+      margin-bottom: 2em;
+
+      h3 {
+        font-size: 2.25rem;
+      }
     }
   }
 `;
@@ -56,6 +89,15 @@ export const ImageWrapper = styled.div`
   width: 25%;
   position: relative;
   overflow: hidden;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.extraLarge}) {
+    width: 35%;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.small}) {
+    width: 100%;
+    order: 1;
+  }
 `;
 
 export const Main = styled.div`
@@ -76,6 +118,26 @@ export const Main = styled.div`
 
     &:hover {
       background: var(--color-dark-secondary);
+    }
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.extraLarge}) {
+    width: 60%;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.large}) {
+    [role="button"] {
+      padding: 0.9em 2em;
+      font-weight: 700;
+    }
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.small}) {
+    width: 100%;
+    margin-bottom: 7.5vh;
+
+    h2 {
+      font-size: clamp(3.5rem, 10vw, 4.5rem);
     }
   }
 `;

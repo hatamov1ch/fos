@@ -3,12 +3,25 @@
   <component name="ChangeListManager">
     <list default="true" id="2f380a65-bb0b-4909-a99c-ee775241e56e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Banner/Banner.styled.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Banner/Banner.styled.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Banner/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Banner/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/BusinessCard/BusinessCard.styled.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BusinessCard/BusinessCard.styled.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SignUp/SignUp.styled.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SignUp/SignUp.styled.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/global.styled.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/global.styled.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/works/work0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/works/work0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/works/work1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/works/work1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/works/work10.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/works/work10.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/works/work11.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/works/work11.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/works/work12.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/works/work12.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/works/work13.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/works/work13.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/works/work14.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/works/work14.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/works/work15.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/works/work15.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/works/work16.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/works/work16.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/works/work17.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/works/work17.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/works/work2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/works/work2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/works/work3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/works/work3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/works/work4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/works/work4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/works/work5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/works/work5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/works/work6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/works/work6.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/works/work7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/works/work7.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/works/work8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/works/work8.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/works/work9.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/works/work9.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/About/About.styled.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About/About.styled.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +83,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="b1f0813d-8b8f-4f2f-9f13-f8e8c2fc7dd1" name="Changes" comment="" />
+      <changelist id="2f380a65-bb0b-4909-a99c-ee775241e56e" name="Changes" comment="" />
       <created>1658581461010</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -89,6 +102,7 @@
       <workItem from="1658967933601" duration="4000" />
       <workItem from="1658967945805" duration="123000" />
       <workItem from="1658968112840" duration="1226000" />
+      <workItem from="1659305491407" duration="1321000" />
     </task>
     <servers />
   </component>
@@ -117,13 +131,11 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/App.js</url>
           <line>17</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/App.js</url>
           <line>21</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
