@@ -1,6 +1,16 @@
 import styled from "styled-components";
 
-export const StyledGallery = styled.div``;
+export const StyledGallery = styled.div`
+  .images-count-controller {
+    margin-top: 2rem;
+    background: transparent;
+    color: var(--color-light-primary);
+    fill: var(--color-light-primary);
+    cursor: pointer;
+    font-size: 5rem;
+    float: right;
+  }
+`;
 
 export const Content = styled.div`
   padding: 10rem 0;
@@ -20,8 +30,7 @@ export const Content = styled.div`
 export const Images = styled.div`
   display: flex;
   flex-wrap: wrap;
-  margin: -2.5rem;
-  margin-top: 5rem;
+  margin: 5rem -2.5rem -2.5rem;
 `;
 
 export const ImageWrapper = styled.div`

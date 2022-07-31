@@ -1,5 +1,5 @@
 import StyledGallery, { Content, Images, ImageWrapper } from "./Gallery.styled";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 //importing necessary components
 import Section from "../Section";
 
@@ -13,15 +13,28 @@ import Slideshow from "yet-another-react-lightbox/plugins/slideshow";
 import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
 
+//React icons
+import { MdExpandMore } from "react-icons/md";
+import { MdExpandLess } from "react-icons/md";
+
 const Gallery = ({ images }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(-1);
+  const [slicedImages, setSlicedImages] = useState([]);
+  const [visible, setVisible] = useState(8);
+
+  const loadMoreImages = () => {
+    if (visible === images.length - 1) return;
+
+    setVisible((prevState) => prevState + images.length);
+  };
+
+  const loadLessImages = () => setVisible((prevState) => (prevState = 8));
+
+  useEffect(() => {
+    setSlicedImages(images?.slice(0, visible));
+  }, [visible]);
 
   const renderImages = (images) => {
-    if (!images || images.length <= 0) {
-      console.error("No data to render.");
-      return null;
-    }
-
     return images.map(({ id, src }, index) => (
       <ImageWrapper
         onClick={() => setCurrentImageIndex(index)}
@@ -39,13 +52,23 @@ const Gallery = ({ images }) => {
           <h2>Фотография наших работ</h2>
 
           <p>
-            Профессионалов, которые занимаются евро-ремонтом квартир, офисов, и
-            домов в Узбекистане. наша компания была основана в 2021 году и
-            успешно показала себя на рынке среди конкурентов. Для нас очень
-            важно чтобы клиенты были довольны нашей работой.это команда молодых
+            Предстаавляем вам фотографии наших работ для ознакомления. В случай
+            заинтересованности оставьте заявку на сайте или позвоните нам для
+            обсуждения ваших проектов.
           </p>
 
-          <Images>{renderImages(images)}</Images>
+          <Images>{renderImages(slicedImages)}</Images>
+
+          <button
+            className="images-count-controller"
+            onClick={visible >= images.length ? loadLessImages : loadMoreImages}
+          >
+            {visible >= images.length ? (
+              <MdExpandLess title="Показать меньше фотографии" />
+            ) : (
+              <MdExpandMore title="Показать все фотографии" />
+            )}
+          </button>
         </Content>
       </Section>
 

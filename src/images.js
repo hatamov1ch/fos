@@ -1,26 +1,74 @@
 export const images = [
   {
+    id: 0,
+    src: require("./assets/images/works/work0.jpg"),
+  },
+  {
     id: 1,
-    src: "https://images.unsplash.com/photo-1601628828688-632f38a5a7d0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1009&q=80",
+    src: require("./assets/images/works/work1.jpg"),
   },
   {
     id: 2,
-    src: "https://images.unsplash.com/photo-1600210492493-0946911123ea?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80",
+    src: require("./assets/images/works/work2.jpg"),
   },
   {
     id: 3,
-    src: "https://images.unsplash.com/photo-1615529182904-14819c35db37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80",
+    src: require("./assets/images/works/work3.jpg"),
   },
   {
     id: 4,
-    src: "https://images.unsplash.com/photo-1631679706909-1844bbd07221?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1392&q=80",
+    src: require("./assets/images/works/work4.jpg"),
   },
   {
     id: 5,
-    src: "https://images.unsplash.com/photo-1600210491369-e753d80a41f3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80",
+    src: require("./assets/images/works/work5.jpg"),
   },
   {
     id: 6,
-    src: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+    src: require("./assets/images/works/work6.jpg"),
+  },
+  {
+    id: 7,
+    src: require("./assets/images/works/work7.jpg"),
+  },
+  {
+    id: 8,
+    src: require("./assets/images/works/work8.jpg"),
+  },
+  {
+    id: 9,
+    src: require("./assets/images/works/work9.jpg"),
+  },
+  {
+    id: 10,
+    src: require("./assets/images/works/work10.jpg"),
+  },
+  {
+    id: 11,
+    src: require("./assets/images/works/work11.jpg"),
+  },
+  {
+    id: 12,
+    src: require("./assets/images/works/work12.jpg"),
+  },
+  {
+    id: 13,
+    src: require("./assets/images/works/work13.jpg"),
+  },
+  {
+    id: 14,
+    src: require("./assets/images/works/work14.jpg"),
+  },
+  {
+    id: 15,
+    src: require("./assets/images/works/work15.jpg"),
+  },
+  {
+    id: 16,
+    src: require("./assets/images/works/work16.jpg"),
+  },
+  {
+    id: 17,
+    src: require("./assets/images/works/work17.jpg"),
   },
 ];

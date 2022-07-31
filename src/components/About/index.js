@@ -60,7 +60,9 @@ const About = () => {
                 Для нас очень важно чтобы клиенты были довольны нашей работой.
               </p>
 
-              <LinkButton role="button">Читать больше</LinkButton>
+              <LinkButton href="https://t.me/webpark_uz" role="button">
+                Связаться
+              </LinkButton>
             </Main>
           </Row>
         </Content>
