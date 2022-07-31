@@ -25,12 +25,25 @@ export const Content = styled.div`
     max-width: 65ch;
     color: var(--color-light-secondary);
   }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.extraLarge}) {
+    padding-top: 0;
+
+    h2 {
+      font-size: clamp(4.5rem, 5vw, 7.5rem);
+    }
+  }
 `;
 
 export const Images = styled.div`
   display: flex;
   flex-wrap: wrap;
   margin: 5rem -2.5rem -2.5rem;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.small}) {
+    width: 100%;
+    margin: 0;
+  }
 `;
 
 export const ImageWrapper = styled.div`
@@ -51,6 +64,16 @@ export const ImageWrapper = styled.div`
     height: 100%;
     object-fit: cover;
     transition: 500ms ease-in-out;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.extraLarge}) {
+    width: calc((100% / 3) - 5rem);
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.small}) {
+    margin: 5rem 0;
+    min-height: 55rem;
+    width: 100%;
   }
 `;
 

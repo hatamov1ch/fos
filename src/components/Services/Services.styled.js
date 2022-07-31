@@ -20,7 +20,7 @@ export const Content = styled.div`
     }
   }
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.extraLarge}) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.large}) {
     padding: 5vh 0;
 
     header {
