@@ -1,8 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b1f0813d-8b8f-4f2f-9f13-f8e8c2fc7dd1" name="Changes" comment="">
+    <list default="true" id="2f380a65-bb0b-4909-a99c-ee775241e56e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/About/About.styled.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About/About.styled.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Banner/Banner.styled.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Banner/Banner.styled.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/BusinessCard/BusinessCard.styled.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BusinessCard/BusinessCard.styled.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer/Footer.styled.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/Footer.styled.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Gallery/Gallery.styled.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Gallery/Gallery.styled.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.styled.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.styled.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Modal/Modal.styled.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Modal/Modal.styled.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Services/Services.styled.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Services/Services.styled.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SignUp/SignUp.styled.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SignUp/SignUp.styled.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Watch/Watch.styled.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Watch/Watch.styled.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/global.styled.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/global.styled.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,28 +34,40 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.standard": "",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "/usr/local/lib/node_modules/prettier",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "/Applications/WebStorm.app/Contents/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/usr/local/lib/node_modules/prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;fileTemplates&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Applications/WebStorm.app/Contents/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="start" />
-      <command value="npm run start" />
       <command value="npm start" />
+      <command value="npm build" />
+      <command value="npm run start" />
+      <command value="npm run build" />
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="npm.start">
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -57,6 +80,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.build" />
         <item itemvalue="npm.start" />
       </list>
     </recent_temporary>
@@ -64,7 +88,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="b1f0813d-8b8f-4f2f-9f13-f8e8c2fc7dd1" name="Changes" comment="" />
+      <changelist id="2f380a65-bb0b-4909-a99c-ee775241e56e" name="Changes" comment="" />
       <created>1658581461010</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -83,6 +107,10 @@
       <workItem from="1658967933601" duration="4000" />
       <workItem from="1658967945805" duration="123000" />
       <workItem from="1658968112840" duration="1226000" />
+      <workItem from="1659107633361" duration="83000" />
+      <workItem from="1659122627809" duration="183000" />
+      <workItem from="1659122827817" duration="708000" />
+      <workItem from="1659125111541" duration="10475000" />
     </task>
     <servers />
   </component>
@@ -107,6 +135,29 @@
           <url>file://$PROJECT_DIR$/src/components/Modal/index.js</url>
           <line>21</line>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/SignUp/SignUp.styled.js</url>
+          <line>40</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/About/About.styled.js</url>
+          <line>108</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/About/About.styled.js</url>
+          <line>131</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/Services/Services.styled.js</url>
+          <line>47</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

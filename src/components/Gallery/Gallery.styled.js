@@ -7,6 +7,7 @@ export const Content = styled.div`
 
   h2 {
     font-size: 7.5rem;
+    font-size: clamp(3.75rem, 10vw, 7.5rem);
     color: var(--color-light-secondary);
     margin-bottom: 0.5em;
   }
@@ -15,6 +16,10 @@ export const Content = styled.div`
     max-width: 65ch;
     color: var(--color-light-secondary);
   }
+
+  @media (max-width: 1000px) {
+    padding: 5rem 0;
+  }
 `;
 
 export const Images = styled.div`
@@ -22,11 +27,15 @@ export const Images = styled.div`
   flex-wrap: wrap;
   margin: -2.5rem;
   margin-top: 5rem;
+
+  @media (max-width: 700px) {
+    margin: 2.5rem 0;
+  }
 `;
 
 export const ImageWrapper = styled.div`
-  width: calc((100% / 4) - 5rem);
-  height: 30rem;
+  width: calc((100% / 3) - 5rem);
+  height: 32.5rem;
   margin: 2.5rem;
   overflow: hidden;
   cursor: pointer;
@@ -42,6 +51,20 @@ export const ImageWrapper = styled.div`
     height: 100%;
     object-fit: cover;
     transition: 500ms ease-in-out;
+  }
+
+  @media (max-width: 1000px) {
+    width: calc((100% / 2) - 5rem);
+  }
+
+  @media (max-width: 700px) {
+    width: 100%;
+    margin: 2.5rem auto;
+    min-height: 45rem;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
   }
 `;
 

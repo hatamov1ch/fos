@@ -13,6 +13,10 @@ export const Content = styled.div`
     h2 {
       font-size: 7.5rem;
       margin-bottom: 0.45em;
+
+      @media (max-width: 1375px) {
+        font-size: clamp(3.75rem, 5vw, 7.5rem);
+      }
     }
 
     p {
@@ -24,6 +28,7 @@ export const ListOfServices = styled.ul`
   list-style: none;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 `;
 export const Service = styled.li`
   width: 28.5%;
@@ -109,8 +114,69 @@ export const Service = styled.li`
 
       .price {
         font-size: 5.2rem;
+        font-size: clamp(3.5rem, 3vw, 5.2rem);
         margin-left: 1.5rem;
       }
+    }
+  }
+
+  @media (max-width: 1500px) {
+    transform: none;
+    width: 29.5%;
+
+    .service-body {
+      padding: 2.2em 1em;
+
+      h3 {
+        font-size: clamp(1.75rem, 1.5vw, 2.1rem);
+      }
+    }
+  }
+
+  @media (max-width: 1050px) {
+    width: 47.5%;
+
+    img {
+      object-fit: cover;
+      transform: translateX(-50%) translateY(-50%);
+    }
+
+    .service-body {
+      h3 {
+        font-size: clamp(2rem, 2vw, 2.25rem);
+      }
+    }
+
+    &:nth-of-type(1) {
+      width: 100%;
+      margin-bottom: 20rem;
+
+      img {
+        width: 80%;
+        height: 100%;
+        transform: translateX(-50%) translateY(-50%);
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    margin-bottom: 25rem !important;
+
+    .service-body {
+      h3 {
+        font-size: clamp(1.75rem, 5vw, 3.2rem);
+      }
+    }
+
+    &:last-of-type {
+      margin-bottom: 0 !important;
+    }
+
+    img {
+      width: 80%;
+      height: 100%;
+      transform: translateX(-50%) translateY(-50%);
     }
   }
 `;

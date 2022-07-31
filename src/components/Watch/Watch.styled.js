@@ -17,9 +17,15 @@ const StyledWatch = styled.div`
 
 export const Content = styled.div`
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   padding: 5rem 0 10rem;
   justify-content: space-between;
+
+  @media (max-width: 1000px) {
+    padding-top: 0;
+    padding-bottom: 7.5rem;
+  }
 `;
 
 export const VideoContainer = styled.div`
@@ -43,6 +49,10 @@ export const VideoContainer = styled.div`
     height: 100%;
     object-fit: cover;
   }
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 export const Main = styled.div`
@@ -51,13 +61,23 @@ export const Main = styled.div`
 
   h2 {
     font-size: 6.5rem;
+    font-size: clamp(3.75rem, 3.5vw, 6.5rem);
     margin-bottom: 0.25em;
   }
 
   p {
     line-height: 1.4;
-    font-size: 1.9rem;
+    font-size: 1.75rem;
     letter-spacing: 1px;
+
+    @media (max-width: 768px) {
+      font-size: 1.6rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    margin-bottom: 5rem;
   }
 `;
 

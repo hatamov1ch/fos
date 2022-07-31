@@ -7,8 +7,10 @@ export const Backdrop = styled.div`
   position: fixed;
   top: 0;
   left: 0;
+  bottom: 0;
+  right: 0;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   z-index: 999999;
   display: flex;
   justify-content: center;
@@ -46,6 +48,10 @@ export const CloseButton = styled.button`
   &:hover svg {
     opacity: 0.5;
     transform: scale(1.1) translateY(-0.25rem);
+  }
+
+  @media (max-width: 768px) {
+    right: 3rem;
   }
 `;
 

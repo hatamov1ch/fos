@@ -13,6 +13,7 @@ export const Content = styled.div`
   &.content-1 {
     padding: 5rem 0;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 
     h3 {
@@ -27,6 +28,10 @@ export const Content = styled.div`
         margin-bottom: 0;
       }
     }
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
   }
 
   &.content-2 {
@@ -37,6 +42,10 @@ export const Content = styled.div`
 
     .copy {
       font-size: 1.4rem;
+
+      @media (max-width: 768px) {
+        font-size: 1rem;
+      }
     }
 
     .dev-website {
@@ -79,6 +88,11 @@ export const Contacts = styled.div`
       }
     }
   }
+	
+	@media(max-width: 768px) {
+		width: 100%;
+		order: 3;
+	}
 `;
 
 export const Email = styled.div`
@@ -95,6 +109,12 @@ export const Email = styled.div`
 
 export const Navigation = styled.div`
   width: 30%;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    order: 2;
+    margin-bottom: 5rem;
+  }
 `;
 
 export const Links = styled.div`
@@ -108,6 +128,12 @@ export const Links = styled.div`
 
 export const Company = styled.div`
   width: 30%;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    margin-bottom: 5rem;
+    order: -1;
+  }
 `;
 
 export const Socials = styled.div`

@@ -105,10 +105,14 @@ const GlobalStyles = createGlobalStyle`
 	 	fill: inherit;
 	 	color: inherit;
 	 }
+	 
+	 .yarl__portal_open {
+		 z-index: 999999999999999;
+	 }
 `;
 
 export const Container = styled.div`
-  width: 100%;
+  width: 90%;
   max-width: 150rem;
   margin: 0 auto;
 `;
