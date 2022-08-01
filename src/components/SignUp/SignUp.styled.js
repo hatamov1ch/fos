@@ -4,6 +4,7 @@ export const StyledSignUp = styled.div`
   align-self: center;
 
   form {
+    position: relative;
     color: var(--color-light-tertiary);
     width: 25vw;
     max-width: 40rem;
@@ -58,6 +59,17 @@ export const StyledSignUp = styled.div`
   @media (max-width: ${({ theme }) => theme.breakpoints.small}) {
     display: none;
   }
+`;
+
+export const Message = styled.div`
+  width: 100%;
+  height: 35%;
+  padding: 1.5em;
+  background: rgb(255, 255, 255);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: var(--color-dark-primary);
 `;
 
 export default StyledSignUp;

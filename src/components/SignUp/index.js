@@ -1,6 +1,7 @@
-import StyledSignUp from "./SignUp.styled";
+import StyledSignUp, { Message } from "./SignUp.styled";
 import { Formik, Form } from "formik";
 import { send } from "@emailjs/browser";
+import { useState } from "react";
 
 // importing necessary components
 import Field from "./Field";
@@ -15,24 +16,47 @@ const initialValues = {
 };
 
 const SignUp = () => {
-  const sendEmail = (values) => {
+  const [isLoading, setIsLoading] = useState(null);
+  const [message, setMessage] = useState("");
+  const [status, setStatus] = useState(null);
+
+  const sendEmail = (values, resetForm) => {
+    setIsLoading(true);
     send("service_5j76yil", "template_5j9h7ik", values, "rJ50KExoXgFizHrAb")
-      .then((result) => console.log(result.text))
-      .catch((error) => console.log(error.text));
+      .then((result) => {
+        setIsLoading(false);
+        setMessage("Ваш запрос принят, ждите звонка");
+        setStatus(true);
+        resetForm();
+        setTimeout(() => {
+          setIsLoading(null);
+          setStatus(null);
+        }, 5000);
+      })
+      .catch((error) => {
+        setIsLoading(false);
+        setMessage("Произошла ошибка, попробуйте позже");
+        setStatus(false);
+
+        setTimeout(() => {
+          setIsLoading(null);
+          setStatus(null);
+        }, 10000);
+      });
   };
 
   return (
     <Formik
       initialValues={initialValues}
       validationSchema={schema}
-      onSubmit={({ fullName, phone, details }) => {
+      onSubmit={({ fullName, phone, details }, { resetForm }) => {
         const filteredValues = {
           fullName: fullName.trim(),
           phone: phone.trim(),
           details: details.trim(),
         };
 
-        sendEmail(filteredValues);
+        sendEmail(filteredValues, resetForm);
       }}
     >
       {(props) => (
@@ -58,12 +82,15 @@ const SignUp = () => {
               />
             </fieldset>
 
-            <input type="submit" value={"Отправить"} />
+            <input type="submit" value="Отправить" />
 
             <p>
               Нажатием данной кнопки вы соглашаетесь на обработку ваших
               персональных данных.
             </p>
+
+            {status === true && <Message success={status}>{message}</Message>}
+            {status === false && <Message success={status}>{message}</Message>}
           </Form>
         </StyledSignUp>
       )}

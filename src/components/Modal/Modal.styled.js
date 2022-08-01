@@ -23,6 +23,10 @@ export const Content = styled.div`
   background: rgba(25, 25, 25, 0.95);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
   position: relative;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.medium}) {
+    width: 90%;
+  }
 `;
 
 export const CloseButton = styled.button`
@@ -46,6 +50,10 @@ export const CloseButton = styled.button`
   &:hover svg {
     opacity: 0.5;
     transform: scale(1.1) translateY(-0.25rem);
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.medium}) {
+    right: 0;
   }
 `;
 

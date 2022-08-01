@@ -12,7 +12,7 @@ const StyledHeader = styled.header`
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoints.medium}) {
-    background: var(--color-dark-primary);
+    background: var(--color-dark-secondary);
     position: fixed;
 
     .hamburger-react {
@@ -20,6 +20,7 @@ const StyledHeader = styled.header`
       color: var(--color-light-primary);
       z-index: 9999;
       float: right;
+      bottom: 0.5rem;
       position: fixed;
     }
   }
