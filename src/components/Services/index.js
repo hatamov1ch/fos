@@ -14,7 +14,7 @@ import HiTechRoom from "../../assets/images/site/hi-tech-room.jpg";
 
 const Services = () => {
   return (
-    <StyledServices>
+    <StyledServices className={"services"}>
       <Section>
         <Content>
           <header>

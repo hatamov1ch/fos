@@ -10,6 +10,7 @@ import StyledFooter, {
 
 //importing necessary components
 import Section from "../Section";
+import { Link as Scroll } from "react-scroll";
 
 //importing svg icons
 import { CallMeSVG } from "../../assets/svg/call-me-svg";
@@ -19,7 +20,7 @@ import { FaTelegram } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 
 const Footer = () => (
-  <StyledFooter>
+  <StyledFooter className={"contacts"}>
     <Section>
       <Content className="content-1">
         <Contacts>
@@ -55,10 +56,21 @@ const Footer = () => (
           <h3>Меню сайта</h3>
 
           <Links>
-            <span>Главная</span>
-            <span>Услуги</span>
-            <span>Портфолио</span>
-            <span>Контакты</span>
+            <Scroll to={"banner"} spy={true} smooth={true}>
+              Главная
+            </Scroll>
+            <Scroll to={"about"} spy={true} smooth={true}>
+              О компании
+            </Scroll>
+            <Scroll to={"services"} spy={true} smooth={true}>
+              Услуги
+            </Scroll>
+            <Scroll to={"gallery"} spy={true} smooth={true}>
+              Портфолио
+            </Scroll>
+            <Scroll to={"contacts"} spy={true} smooth={true}>
+              Контакты
+            </Scroll>
           </Links>
         </Navigation>
 

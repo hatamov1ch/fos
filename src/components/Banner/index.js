@@ -11,6 +11,7 @@ import StyledBanner, {
 import Section from "../Section";
 import SignUp from "../SignUp";
 import BusinessCard from "../BusinessCard";
+import { Link as Scroll } from "react-scroll";
 
 // importing svg icons
 import { MeasureSVG } from "../../assets/svg/measure-svg";
@@ -19,7 +20,7 @@ import { WarrantySVG } from "../../assets/svg/warranty-svg";
 import { MouseSVG } from "../../assets/svg/mouse-svg";
 
 const Banner = () => (
-  <StyledBanner>
+  <StyledBanner className="banner">
     <Section>
       <Content>
         <Main>
@@ -35,7 +36,9 @@ const Banner = () => (
             материалы по оптовым ценам.
           </p>
 
-          <button role="button">Проделанные работы</button>
+          <Scroll to={"gallery"} smooth={true} spy={true} role="button">
+            Проделанные работы
+          </Scroll>
 
           <Row>
             <List>
@@ -67,9 +70,11 @@ const Banner = () => (
       </Content>
     </Section>
 
-    <ScrollBottom>
-      <MouseSVG />
-    </ScrollBottom>
+    <Scroll to={"about"} spy={true} smooth={true}>
+      <ScrollBottom>
+        <MouseSVG />
+      </ScrollBottom>
+    </Scroll>
   </StyledBanner>
 );
 

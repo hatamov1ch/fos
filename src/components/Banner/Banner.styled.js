@@ -91,6 +91,8 @@ export const Main = styled.div`
   [role="button"] {
     padding: 1.25em 3em;
     margin-bottom: 1.5em;
+    display: inline-block;
+    cursor: pointer;
     background: transparent;
     border: 0.2rem solid var(--color-light-primary);
     color: inherit;
@@ -134,12 +136,12 @@ export const Main = styled.div`
 
     [role="button"] {
       padding: 1.25em 1.5em;
-      line-height 1.5;
+      line-height: 1.5;
     }
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoints.extraSmall}) {
-	  text-align: center;
+    text-align: center;
     h1 {
       font-size: clamp(3rem, 9vw, 10rem);
     }

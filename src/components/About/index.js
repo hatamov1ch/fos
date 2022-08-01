@@ -16,7 +16,7 @@ import LuxuryHiTechRoom from "../../assets/images/site/luxury-hi-tech-room.jpg";
 
 const About = () => {
   return (
-    <StyledAbout>
+    <StyledAbout className={"about"}>
       <Section>
         <Content>
           <Row>

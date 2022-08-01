@@ -129,11 +129,11 @@ export const Navigation = styled.div`
 `;
 
 export const Links = styled.div`
-  span {
+  a {
     font-size: 1.8rem;
     display: block;
     margin-bottom: 0.75em;
-    letter-spacing: 1px;
+    cursor: pointer;
   }
 `;
 

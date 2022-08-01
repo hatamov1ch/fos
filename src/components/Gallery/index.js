@@ -46,7 +46,7 @@ const Gallery = ({ images }) => {
   };
 
   return (
-    <StyledGallery>
+    <StyledGallery className={"gallery"}>
       <Section>
         <Content>
           <h2>Фотография наших работ</h2>
