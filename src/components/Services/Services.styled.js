@@ -32,9 +32,13 @@ export const Content = styled.div`
       }
 
       p {
-        max-width: 55ch;
+        max-width: 60ch;
       }
     }
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.extraSmall}) {
+    text-align: center;
   }
 `;
 

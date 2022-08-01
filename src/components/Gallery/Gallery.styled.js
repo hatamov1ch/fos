@@ -21,7 +21,7 @@ export const Content = styled.div`
   }
 
   p {
-    max-width: 75ch;
+    max-width: 50ch;
     color: var(--color-light-secondary);
   }
 
@@ -39,6 +39,10 @@ export const Content = styled.div`
     h2 {
       font-size: clamp(3.2rem, 5vw, 7.5rem);
     }
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.extraSmall}) {
+    text-align: center;
   }
 `;
 
@@ -78,7 +82,7 @@ export const ImageWrapper = styled.div`
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoints.small}) {
-    margin: 5rem 0;
+    margin: 5rem 0 0;
     min-height: 55rem;
     width: 100%;
   }

@@ -139,6 +139,7 @@ export const Main = styled.div`
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoints.extraSmall}) {
+	  text-align: center;
     h1 {
       font-size: clamp(3rem, 9vw, 10rem);
     }

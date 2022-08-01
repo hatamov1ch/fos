@@ -3,11 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="2f380a65-bb0b-4909-a99c-ee775241e56e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer/Footer.styled.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/Footer.styled.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/About/About.styled.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About/About.styled.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Banner/Banner.styled.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Banner/Banner.styled.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Gallery/Gallery.styled.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Gallery/Gallery.styled.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.styled.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.styled.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Services/Services.styled.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Services/Services.styled.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Watch/Watch.styled.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Watch/Watch.styled.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,10 +46,21 @@
     <option name="myCommands">
       <command value="start" />
       <command value="npm run start" />
+      <command value="npm run build" />
       <command value="npm start" />
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="npm.start">
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -62,6 +73,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.build" />
         <item itemvalue="npm.start" />
       </list>
     </recent_temporary>
@@ -88,7 +100,8 @@
       <workItem from="1658967933601" duration="4000" />
       <workItem from="1658967945805" duration="123000" />
       <workItem from="1658968112840" duration="1226000" />
-      <workItem from="1659305491407" duration="7393000" />
+      <workItem from="1659305491407" duration="7442000" />
+      <workItem from="1659313007437" duration="777000" />
     </task>
     <servers />
   </component>

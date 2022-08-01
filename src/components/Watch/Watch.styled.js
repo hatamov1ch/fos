@@ -21,6 +21,10 @@ export const Content = styled.div`
   padding: 5rem 0;
   justify-content: space-between;
   flex-wrap: wrap;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.small}) {
+    padding: 0 0 10rem;
+  }
 `;
 
 export const VideoContainer = styled.div`
@@ -79,6 +83,10 @@ export const Main = styled.div`
 
   @media (max-width: ${({ theme }) => theme.breakpoints.medium}) {
     width: 100%;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.extraSmall}) {
+    text-align: center;
   }
 `;
 

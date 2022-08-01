@@ -6,6 +6,10 @@ const StyledAbout = styled.div`
 
 export const Content = styled.div`
   padding: 15vh 0 10vh;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.extraSmall}) {
+    text-align: center;
+  }
 `;
 
 export const Row = styled.div`
@@ -45,6 +49,12 @@ export const List = styled.div`
         left: 0;
         background-color: var(--color-beige);
         border-radius: var(--radius-primary);
+
+        @media (max-width: ${({ theme }) => theme.breakpoints.extraSmall}) {
+          width: 60%;
+          left: 50%;
+          transform: translateX(-50%);
+        }
       }
     }
 
