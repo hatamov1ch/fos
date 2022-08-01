@@ -128,7 +128,7 @@ export const Service = styled.li`
       margin-bottom: 1.25em;
 
       .price {
-        font-size: clamp(2.5rem, 3.5vw, 5.2rem);
+        font-size: clamp(3.75rem, 10vw, 5.2rem);
         margin-left: 1.5rem;
       }
     }

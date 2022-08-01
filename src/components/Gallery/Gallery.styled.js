@@ -32,6 +32,14 @@ export const Content = styled.div`
       font-size: clamp(4.5rem, 5vw, 7.5rem);
     }
   }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.small}) {
+    padding-top: 0;
+
+    h2 {
+      font-size: clamp(3.2rem, 5vw, 7.5rem);
+    }
+  }
 `;
 
 export const Images = styled.div`

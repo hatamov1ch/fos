@@ -14,11 +14,13 @@ export const Content = styled.div`
     padding: 5rem 0;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 
     h3 {
-      font-size: 2.5rem;
-      font-weight: 500;
+      font-size: 2rem;
+      font-weight: 700;
       margin-bottom: 1em;
+      color: var(--color-light-primary);
     }
 
     h3,
@@ -37,6 +39,10 @@ export const Content = styled.div`
 
     .copy {
       font-size: 1.4rem;
+
+      @media (max-width: ${({ theme }) => theme.breakpoints.small}) {
+        font-size: 1rem;
+      }
     }
 
     .dev-website {
@@ -50,6 +56,14 @@ export const Content = styled.div`
         opacity: 1;
       }
     }
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.small}) {
+      border-radius: 0;
+    }
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.small}) {
+    border-radius: 0;
   }
 `;
 
@@ -79,6 +93,14 @@ export const Contacts = styled.div`
       }
     }
   }
+	
+	@media (max-width: ${({ theme }) => theme.breakpoints.large}) {
+		width: 40%;
+	}
+	
+	@media (max-width: ${({ theme }) => theme.breakpoints.small}) {
+		width: 100%;
+	}
 `;
 
 export const Email = styled.div`
@@ -95,6 +117,15 @@ export const Email = styled.div`
 
 export const Navigation = styled.div`
   width: 30%;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.large}) {
+    width: 20%;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.small}) {
+    width: 100%;
+    margin: 5rem 0;
+  }
 `;
 
 export const Links = styled.div`
@@ -108,6 +139,10 @@ export const Links = styled.div`
 
 export const Company = styled.div`
   width: 30%;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.small}) {
+    width: 100%;
+  }
 `;
 
 export const Socials = styled.div`
