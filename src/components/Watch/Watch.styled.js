@@ -93,12 +93,12 @@ export const Main = styled.div`
 const AnimatePlayIcon = keyframes`
   from {
 	  opacity: .75;
-    transform: scale(.9) translate(-50%, -70%);
+    transform: scale(.9) translate(-50%, -55%);
   }
 
   to {
 		opacity: 1;
-    transform: scale(1.01) translate(-50%, -50%);
+    transform: scale(1.01) translate(-50%, -55%);
   }
 `;
 

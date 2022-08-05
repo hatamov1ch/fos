@@ -22,16 +22,18 @@ const theme = {
   },
 };
 
-const App = () => (
-  <ThemeProvider theme={theme}>
-    <Layout>
-      <Banner />
-      <About />
-      <Services />
-      <Gallery images={images} />
-      <Watch />
-    </Layout>
-  </ThemeProvider>
-);
+const App = () => {
+  return (
+    <ThemeProvider theme={theme}>
+      <Layout>
+        <Banner />
+        <About />
+        <Services />
+        <Gallery images={images} />
+        <Watch />
+      </Layout>
+    </ThemeProvider>
+  );
+};
 
 export default App;

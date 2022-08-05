@@ -109,6 +109,13 @@ const GlobalStyles = createGlobalStyle`
 	.yarl__portal_open {
 		z-index: 999999999;
 	}
+	
+	.loader {
+		position: absolute;
+		transform: translate(-50%, -50%);
+		left: 50%;
+		top: 50%;
+	}
 `;
 
 export const Container = styled.div`

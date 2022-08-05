@@ -99,7 +99,6 @@ export const Main = styled.div`
     letter-spacing: 2px;
     text-transform: uppercase;
     border-radius: var(--radius-primary);
-    cursor: pointer;
     transition: var(--transition-primary) ease-in-out;
 
     &:hover {
