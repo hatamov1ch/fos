@@ -1,4 +1,4 @@
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 
 const StyledWatch = styled.div`
   color: var(--color-light-secondary);
@@ -90,29 +90,16 @@ export const Main = styled.div`
   }
 `;
 
-const AnimatePlayIcon = keyframes`
-  from {
-	  opacity: .75;
-    transform: scale(.9) translate(-50%, -55%);
-  }
-
-  to {
-		opacity: 1;
-    transform: scale(1.01) translate(-50%, -55%);
-  }
-`;
-
 export const Icon = styled.i`
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
-  width: 7.5rem;
-  height: 7.5rem;
+  width: 4.5rem;
+  height: 4.5rem;
   color: var(--color-light-primary);
   fill: var(--color-light-primary);
-  animation: ${AnimatePlayIcon} 750ms ease-in-out infinite alternate;
   cursor: pointer;
   transition: var(--transition-primary);
   backface-visibility: hidden;

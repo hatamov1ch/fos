@@ -3,11 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="2f380a65-bb0b-4909-a99c-ee775241e56e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Banner/Banner.styled.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Banner/Banner.styled.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Watch/Watch.styled.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Watch/Watch.styled.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/global.styled.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/global.styled.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/BusinessCard/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BusinessCard/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,9 +42,10 @@
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="start" />
-      <command value="npm run start" />
-      <command value="npm start" />
       <command value="npm run build" />
+      <command value="npm run start" />
+      <command value="npm run dev" />
+      <command value="npm start" />
     </option>
   </component>
   <component name="RunManager" selected="npm.start">
@@ -104,6 +102,11 @@
       <workItem from="1659313007437" duration="6322000" />
       <workItem from="1659329672480" duration="2578000" />
       <workItem from="1659333941641" duration="1049000" />
+      <workItem from="1659732724184" duration="267000" />
+      <workItem from="1659792179379" duration="1009000" />
+      <workItem from="1659897226664" duration="2626000" />
+      <workItem from="1659913060698" duration="1170000" />
+      <workItem from="1659935347460" duration="1897000" />
     </task>
     <servers />
   </component>
@@ -128,16 +131,6 @@
           <url>file://$PROJECT_DIR$/src/components/Modal/index.js</url>
           <line>21</line>
           <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/App.js</url>
-          <line>17</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/App.js</url>
-          <line>21</line>
-          <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

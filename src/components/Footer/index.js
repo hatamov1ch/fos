@@ -26,20 +26,12 @@ const Footer = () => (
         <Contacts>
           <h3>Контакты</h3>
 
-          <address>
-            Республика Узбекистан, г. Ташкент, Юнусабадский р-н, Ц5, дом 46B/24,
-            ориентир: Финансовый институт.
-          </address>
+          <address>Республика Узбекистан, г. Ташкент</address>
 
           <div className="phones">
             <div className="phones__item">
               <CallMeSVG />
-              <a href="tel:+998994395221">+(998)98 707-49-22</a>
-            </div>
-
-            <div className="phones__item">
-              <CallMeSVG />
-              <a href="tel:+998994395221">+(998)98 707-49-22</a>
+              <a href="tel:+998974708979">+(998)97 470-89-79</a>
             </div>
           </div>
 
@@ -83,15 +75,19 @@ const Footer = () => (
           </p>
 
           <Socials>
-            <a target="_blank" rel="noreferrer" href="https://t.me/webpark_uz">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://instagram.com/futureofstroy?igshid=YmMyMTA2M2Y="
+            >
               <FaInstagram />
             </a>
 
-            <a target="_blank" rel="noreferrer" href="https://t.me/webpark_uz">
+            <a target="_blank" rel="noreferrer" href="#">
               <FaTelegram />
             </a>
 
-            <a target="_blank" rel="noreferrer" href="https://t.me/webpark_uz">
+            <a target="_blank" rel="noreferrer" href="#">
               <FaFacebook />
             </a>
           </Socials>

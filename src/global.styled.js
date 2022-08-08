@@ -110,11 +110,16 @@ const GlobalStyles = createGlobalStyle`
 		z-index: 999999999;
 	}
 	
-	.loader {
-		position: absolute;
-		transform: translate(-50%, -50%);
-		left: 50%;
-		top: 50%;
+	.page-loader {
+		width: 100%;
+		height: 100vh;
+		background: #1c1c1c;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-transform: uppercase;
+		font-size: clamp(2.75rem, 5vw, 5rem);
+		color: var(--color-light-primary);
 	}
 `;
 
